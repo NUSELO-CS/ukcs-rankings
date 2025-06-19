@@ -1,0 +1,42 @@
+{
+  "ECL": {
+    "base_points": 100,
+    "win_points": 3
+  },
+  "ECL Play-in": {
+    "base_points": 85,
+    "win_points": 3
+  },
+  "Advanced": {
+    "base_points": 70,
+    "win_points": 3
+  },
+  "Main": {
+    "base_points": 45,
+    "win_points": 3
+  },
+  "Intermediate": {
+    "base_points": 30,
+    "win_points": 2
+  },
+  "Entry": {
+    "base_points": 20,
+    "win_points": 2
+  },
+  "Open10": {
+    "base_points": 10,
+    "win_points": 2
+  },
+  "Open9": {
+    "base_points": 10,
+    "win_points": 1
+  },
+  "Open1-8": {
+    "base_points": 5,
+    "win_points": 1
+  },
+  "Open": {
+    "base_points": 15,
+    "win_points": 2
+  }
+}

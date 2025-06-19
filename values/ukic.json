@@ -1,0 +1,26 @@
+{
+  "1": {
+    "base_points": 55,
+    "variable_points": 40
+  },
+  "2": {
+    "base_points": 45,
+    "variable_points": 25
+  },
+  "Varsity": {
+    "base_points": 30,
+    "variable_points": 15
+  },
+  "3": {
+    "base_points": 25,
+    "variable_points": 20
+  },
+  "Collegiate": {
+    "base_points": 15,
+    "variable_points": 10
+  },
+  "4": {
+    "base_points": 10,
+    "variable_points": 15
+  }
+}
