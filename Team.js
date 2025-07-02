@@ -5,6 +5,8 @@ class Team {
     this.end_date = data.end_date;
     this.roster = data.roster || [];
     this.totalPoints = 0;
+    this.penalty = 0;
+    this.penaltyPercent = 0;
 
     this.players = this.roster.map((id) => playerMap[id]).filter(Boolean);
   }
@@ -26,6 +28,8 @@ class Team {
 
     // Penalty applied for team points variance
     const penalty = Math.pow(stdev / sum, 2.5) * sum;
+    this.penalty = penalty;
+    this.penaltyPercent = (penalty / sum) * 100;
     return sum - penalty;
   }
 }

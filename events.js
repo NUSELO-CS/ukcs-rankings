@@ -48,6 +48,7 @@ async function calculateEventPoints(players) {
       const points = placementObj.points;
       const weight = calculateDecayWeight(event.end_date);
       const weightedPoints = points * weight;
+      event.weightedPoints = weightedPoints;
       totalPoints += weightedPoints;
     }
 

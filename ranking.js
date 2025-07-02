@@ -1,10 +1,12 @@
 const { grabData } = require('../data_loader/grabData.js'); // data loading from the database is handled in a separate file, returning teams and players data
 const { calculateLeaguePoints } = require('./league.js');
 const { calculateEventPoints } = require('./events.js');
+const { generateReports } = require('./report.js');
 const Player = require('./Player.js');
 const Team = require('./Team.js');
 
 async function main(pool) {
+  const date = new Date();
   const { teams, playersData, seasonData } = await grabData(pool);
 
   const players = {};
@@ -40,6 +42,8 @@ async function main(pool) {
     .sort((a, b) => b.totalPoints - a.totalPoints);
 
   console.log('Completed');
+
+  generateReports(rankedTeams, players, date);
 
   return { rankedTeams, players };
 }
