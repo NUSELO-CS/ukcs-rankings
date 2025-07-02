@@ -18,4 +18,4 @@ At this point the ranking is still having all components fully and correctly por
 
 ### Updates to the model
 
-The model will be updated, improved and reviewed over the coming weeks. Feel free to make any PR's or raise issues to modify the code. In the coming weeks graphs will be produced to better explain the point component system as well as breakdowns for each team to identify where players' points are coming from as well as any potential issues
+The model will be updated, improved and reviewed over the coming weeks. Feel free to make any PR's or raise issues to modify the code. In the coming weeks graphs will be produced to better explain the point component system as well as the breakdown system being enhanced with more details
