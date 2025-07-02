@@ -2,6 +2,8 @@
 
 This is a BETA port of the original ukcs-rankings methodology to a fully automated project and open-sourced model.
 
+The latest rankings can be [viewed online here](https://nuselo.streamlit.app/Rankings)
+
 ## Methodology
 
 Players play in UKCS events, UKCS leagues and international leagues. This ranking system combines players results to generate rankings of the teams.
