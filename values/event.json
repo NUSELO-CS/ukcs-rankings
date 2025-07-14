@@ -104,6 +104,11 @@
     { "placement": 5.5, "points": 90.0 },
     { "placement": 6.5, "points": 45.0 }
   ],
+  "B - Qualifier": [
+    { "placement": 1.0, "points": 200.0 },
+    { "placement": 2.0, "points": 145.0 },
+    { "placement": 1.5, "points": 175.0 }
+  ],
   "UKIC": [
     { "placement": 1.0, "points": 400.0 },
     { "placement": 2.0, "points": 250.0 },

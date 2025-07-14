@@ -29,7 +29,10 @@ async function main(pool) {
   await calculateEventPoints(players);
 
   for (const player of Object.values(players)) {
-    player.totalPoints = (player.leaguePoints ?? 0) + (player.eventPoints ?? 0);
+    // Re working player points. Previously this worked as an effective 25 / 25 / 50 ratio for ESEA, UKIC, Events. 
+    // This will likely return to this same format with a more appropriate re jiggle of the point weightings on the subset end. These had been rejiggled prior to the re-release and open source and this should move closer in line with what was used before
+    // player.totalPoints = (player.leaguePoints ?? 0) + (player.eventPoints ?? 0);
+    player.totalPoints = ((player.eseaPoints ?? 0) * (1.4)) + ((player.eventPoints ?? 0) * (0.8)) + ((player.ukicPoints ?? 0) * (0.8));
   }
 
   for (const team of Object.values(teamInstances)) {
